@@ -42,9 +42,8 @@ def find_protein_sequence(sequence):
         print("No stop codon found.")
         return
 
-    # Extract and print the protein sequence between the start and stop codons
+    # Extract the protein sequence between the start and stop codons
     protein_sequence = sequence[start_pos:stop_pos + 3]
-    print(f"The ORF is: {protein_sequence}")
 
 def complementary_ORF_finder(sequence):
     # Find ORFs in the complementary sequence
@@ -71,7 +70,7 @@ def process_sequence(sequence):
         
         # Display all complementary ORFs found
         if complementary_orfs:
-            print("ORFs:")
+            print("The ORFs are:")
             for orf in complementary_orfs:
                 print(orf)
     else:
