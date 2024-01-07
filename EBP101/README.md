@@ -7,4 +7,4 @@ Contains short scripts in c made during the class regarding the manipulation of 
 ## ORF
 Contains a script in c as well as some premade datasets. 
 The program detects ORFs in given DNA sequences. 
-\n Before using install Biopython: pip3 install biopython
+Before using install Biopython: pip3 install biopython
