@@ -58,7 +58,6 @@ def complementary_ORF_finder(sequence):
         if stop_pos != -1:
             orf_sequence = sequence[start_pos:stop_pos + 3]
             orfs.append(orf_sequence)
-            print(f"ORF found in complementary sequence: {orf_sequence}")
 
     return orfs
 
@@ -72,7 +71,7 @@ def process_sequence(sequence):
         
         # Display all complementary ORFs found
         if complementary_orfs:
-            print("All ORFs found in complementary sequence:")
+            print("ORFs:")
             for orf in complementary_orfs:
                 print(orf)
     else:
